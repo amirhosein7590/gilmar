@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: AbarExtraBold;
+  src: url(/public/fonts/AbarMidFaNum-ExtraBold.woff2);
+}
+
+@font-face {
+  font-family: AbarSemiBold;
+  src: url(/public/fonts/AbarMidFaNum-SemiBold.woff2);
+}
+
+:root {
+  --abar-extra-bold: AbarExtraBold;
+  --abar-semi-bold: AbarSemiBold;
+}
