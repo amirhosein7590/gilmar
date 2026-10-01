@@ -5,10 +5,15 @@ import { navLinks } from "@/constants/ui/nav/links";
 
 function Navbar() {
   return (
+    <div className={
+      cn(
+        "bg-nav-background py-[6.5px] px-[8px]",
+        "mt-10 rounded-[80px]"
+      )
+    }>
     <nav
       className={cn(
-        "flex justify-between items-center mt-10 rounded-[80px]",
-        "bg-nav-background py-[6.5px] px-[8px] w-10/12 mx-auto",
+        "border border-1 flex justify-between items-center rounded-[100px] py-1 px-2"
       )}
     >
       <div className="logo-container w-2/12">
@@ -34,13 +39,14 @@ function Navbar() {
         ))}
       </div>
 
+      <div className="login w-2/12 flex justify-end">
       <Button
         type="button"
         className={cn(
-          "w-2/12 flex items-center justify-between gap-2",
+          "flex items-center justify-between gap-2",
           "py-2.5 px-5",
-          "bg-light-green shadow-brand-shadow w-38.5 h-13 rounded-[80px]",
-          "text-[14px] cursor-pointer"
+          "bg-light-green shadow-brand-shadow w-40 h-13 rounded-[80px]",
+          "cursor-pointer"
         )}
       >
         <Image
@@ -53,7 +59,9 @@ function Navbar() {
           ورود یا ثبت نام
         </span>
       </Button>
+        </div>
     </nav>
+    </div>
   );
 }
 
