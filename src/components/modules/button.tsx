@@ -114,6 +114,6 @@ const Button = React.memo(
   },
 );
 
-Button.displayName = "Button"
+Button.displayName = "Button";
 
 export { Button, buttonVariants };
