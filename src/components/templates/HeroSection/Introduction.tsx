@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Button } from "@/components/modules/Button";
 import { cn } from "@/lib/utils";
 import Background from "@/components/modules/Background";
+import CTA from "@/components/modules/Button/CTA";
 
 function Introduction() {
   return (
@@ -17,26 +17,7 @@ function Introduction() {
           میراث فرهنگی، صنایع دستی و گردشگری گیلان فعالیت دارد.
         </h3>
 
-        <Button
-          className={cn(
-            "flex items-center gap-x-3",
-            "py-2.5 px-5",
-            "bg-light-green shadow-brand-shadow mt-2 w-47.75 h-13 rounded-[80px]",
-            "cursor-pointer",
-          )}
-          type="button"
-        >
-          <span className="text-[16px] text-white font-abar-semi-bold">
-            مهمان گیلمار شو
-          </span>
-
-          <Image
-            width={40}
-            height={40}
-            src="/images/left-arrow.svg"
-            alt="left arrow icon"
-          />
-        </Button>
+        <CTA>مهمان گیلمار شو</CTA>
       </div>
 
       <div

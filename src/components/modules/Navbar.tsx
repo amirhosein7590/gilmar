@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { Button } from "./Button";
+import { Button } from "./Button/Button";
 import { navLinks } from "@/constants/ui/nav/links";
 
 function Navbar() {
