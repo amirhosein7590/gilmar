@@ -3,7 +3,10 @@ import { Button } from "./Button";
 import Image from "next/image";
 import { PropsWithChildren } from "react";
 
-function CTA({ children }: PropsWithChildren) {
+function CTA({
+  children,
+  className,
+}: PropsWithChildren & { className?: string }) {
   return (
     <Button
       className={cn(
@@ -11,6 +14,7 @@ function CTA({ children }: PropsWithChildren) {
         "py-2.5 px-5",
         "bg-light-green shadow-brand-shadow mt-2 w-47.75 h-13 rounded-[80px]",
         "cursor-pointer",
+        className,
       )}
       type="button"
     >
