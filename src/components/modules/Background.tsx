@@ -1,11 +1,16 @@
+import { CSSProperties } from "react";
+
 type TBackground = {
   src?: string;
   className?: string;
+  style?: CSSProperties;
 };
 
-function Background({ src, className }: TBackground) {
-  const style = src ? { backgroundImage: `url('${src}')` } : {};
-  return <div className={className ?? ""} style={style}></div>;
+function Background({ src, className, style }: TBackground) {
+  const imageSrc = src ? { backgroundImage: `url('${src}')` } : {};
+  return (
+    <div className={className ?? ""} style={{ ...imageSrc, ...style }}></div>
+  );
 }
 
 export default Background;
