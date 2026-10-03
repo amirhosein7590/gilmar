@@ -4,7 +4,7 @@ import Slider from "./Slider";
 
 function Services() {
   return (
-    <div className="relative services-container my-20 flex justify-between items-center w-full">
+    <div className="relative services-container mt-20 flex justify-between items-center w-full">
       <Background
         className="absolute w-1/2 h-1/3 -z-1 top-0 right-10"
         src="/images/vector-bg.svg"
