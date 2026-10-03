@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Background from "../modules/Background";
+import Background from "../../modules/Background";
 import { residenceCards } from "@/constants/ui/Residence/Residences";
-import ResidenceCard from "../modules/ResidenceCard";
+import ResidenceCard from "../../modules/ResidenceCard";
 
 function Residence() {
   return (

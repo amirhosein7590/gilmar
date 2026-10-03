@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import Navbar from "../../modules/Navbar";
+import Navbar from "../../../modules/Navbar";
 import Introduction from "./Introduction";
 import Background from "@/components/modules/Background";
 

@@ -1,10 +1,9 @@
-import HeroSection from "@/components/templates/HeroSection/HeroSection";
-import AboutUs from "@/components/templates/AboutUs";
-import Rules from "@/components/templates/Rules";
-import Services from "@/components/templates/Services/Services";
-import Residence from "@/components/templates/Residence";
-import { VideoPlayer } from "@/components/modules/VideoPlayer";
-import Video from "@/components/templates/Video/Video";
+import HeroSection from "@/components/templates/Home/HeroSection/HeroSection";
+import AboutUs from "@/components/templates/Home/AboutUs";
+import Rules from "@/components/templates/Home/Rules";
+import Services from "@/components/templates/Home/Services/Services";
+import Residence from "@/components/templates/Home/Residence";
+import Video from "@/components/templates/Home/Video/Video";
 
 export default function Home() {
   return (

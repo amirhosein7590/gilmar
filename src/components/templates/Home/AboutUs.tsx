@@ -1,6 +1,6 @@
 import Image from "next/image";
-import CTA from "../modules/Button/CTA";
-import Background from "../modules/Background";
+import CTA from "../../modules/Button/CTA";
+import Background from "../../modules/Background";
 
 function AboutUs() {
   return (

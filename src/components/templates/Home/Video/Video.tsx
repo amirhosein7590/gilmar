@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Background from "../../modules/Background";
-import CTA from "../../modules/Button/CTA";
-import { VideoPlayer } from "../../modules/VideoPlayer";
+import Background from "../../../modules/Background";
+import CTA from "../../../modules/Button/CTA";
+import { VideoPlayer } from "../../../modules/VideoPlayer";
 import CustomPlayButton from "./CustomPlayButton";
 
 function Video() {
