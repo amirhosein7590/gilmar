@@ -2,7 +2,7 @@ import { memo } from "react";
 
 import type { TServicesSlide } from "@/constants/ui/servicesSlides/slides";
 
-function ServicesSlide({ imageSrc, title, id }: TServicesSlide) {
+function ServicesSlide({ imageSrc, title }: TServicesSlide) {
   return (
     <div
       className="service-slide relative w-63 h-76 bg-cover bg-center rounded-lg bg-no-repeat"
