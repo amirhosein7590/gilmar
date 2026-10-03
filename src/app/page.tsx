@@ -3,6 +3,8 @@ import AboutUs from "@/components/templates/AboutUs";
 import Rules from "@/components/templates/Rules";
 import Services from "@/components/templates/Services/Services";
 import Residence from "@/components/templates/Residence";
+import { VideoPlayer } from "@/components/modules/VideoPlayer";
+import Video from "@/components/templates/Video/Video";
 
 export default function Home() {
   return (
@@ -12,6 +14,7 @@ export default function Home() {
       <Rules />
       <Services />
       <Residence />
+      <Video />
     </div>
   );
 }
