@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Background from "../../../modules/Background";
-import CTA from "../../../modules/Button/CTA";
-import { VideoPlayer } from "../../../modules/VideoPlayer";
+import Background from "@/components/modules/Background";
+import CTA from "@/components/modules/Button/CTA";
+import { VideoPlayer } from "@/components/modules/VideoPlayer";
 import CustomPlayButton from "./CustomPlayButton";
 
 function Video() {
@@ -50,12 +50,12 @@ function Video() {
       </div>
 
       <Image
-       width={134}
+        width={134}
         height={139}
-         src="/images/gold-star-icon.png"
-          alt="gold star icon"
-          className="absolute z-20 -bottom-15 rotate-45 right-1/2 w-33.5 h-34.75"
-           />
+        src="/images/gold-star-icon.png"
+        alt="gold star icon"
+        className="absolute z-20 -bottom-15 rotate-45 right-1/2 w-33.5 h-34.75"
+      />
     </div>
   );
 }
