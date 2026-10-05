@@ -69,6 +69,7 @@
     inset 0px 1px 0px 0px #ffffff29, 0px 1px 2px -1px #92929266;
   --shadow-rule-card: 0 11px 2px -1px #e6e6e6;
   --shadow-residence-card: 1px 4px 4px 3px #d5dbe0;
+  --shadow-package-card: 0px 0px 2px 5px #e6e6e6;
 
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -130,5 +131,31 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+@layer components {
+  .packages-slider .swiper-pagination {
+    bottom: 24px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .packages-slider .swiper-pagination-bullet.custom-bullet {
+    width: 24px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 1;
+    transition: all 0.3s ease;
+    margin: 0 !important;
+  }
+
+  .packages-slider
+    .swiper-pagination-bullet.custom-bullet.custom-bullet-active {
+    background-color: #ffffff;
+    width: 32px;
   }
 }
