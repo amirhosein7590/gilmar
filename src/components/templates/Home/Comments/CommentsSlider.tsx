@@ -37,7 +37,7 @@ function CommentsSlider() {
       </Swiper>
       <div
         ref={paginationRef}
-        className="pagination-container w-full z-10 absolute bottom-1/8  right-3 flex justify-center items-center gap-x-2"
+        className="pagination-container w-full z-10 absolute bottom-1/8 bg-transparent -right-6 flex justify-center items-center gap-x-2"
       ></div>
     </>
   );
