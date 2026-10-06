@@ -133,29 +133,3 @@
     @apply font-sans;
   }
 }
-
-@layer components {
-  .packages-slider .swiper-pagination {
-    bottom: 24px !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .packages-slider .swiper-pagination-bullet.custom-bullet {
-    width: 24px;
-    height: 4px;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.4);
-    opacity: 1;
-    transition: all 0.3s ease;
-    margin: 0 !important;
-  }
-
-  .packages-slider
-    .swiper-pagination-bullet.custom-bullet.custom-bullet-active {
-    background-color: #ffffff;
-    width: 32px;
-  }
-}
