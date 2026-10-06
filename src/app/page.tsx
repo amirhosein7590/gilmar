@@ -6,6 +6,7 @@ import Residence from "@/components/templates/Home/Residence";
 import Video from "@/components/templates/Home/Video/Video";
 import Comments from "@/components/templates/Home/Comments/Comments";
 import Packages from "@/components/templates/Home/Packages/Packages";
+import Blogs from "@/components/templates/Home/Blogs/Blogs";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Video />
       <Comments />
       <Packages />
+      <Blogs /> 
     </div>
   );
 }
