@@ -7,6 +7,8 @@ import Video from "@/components/templates/Home/Video/Video";
 import Comments from "@/components/templates/Home/Comments/Comments";
 import Packages from "@/components/templates/Home/Packages/Packages";
 import Blogs from "@/components/templates/Home/Blogs/Blogs";
+import Faq from "@/components/templates/Faq/Faq";
+import Footer from "@/components/modules/Footer";
 
 export default function Home() {
   return (
@@ -19,7 +21,9 @@ export default function Home() {
       <Video />
       <Comments />
       <Packages />
-      <Blogs /> 
+      <Blogs />
+      <Faq />
+      <Footer />
     </div>
   );
 }

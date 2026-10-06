@@ -7,8 +7,6 @@ import "swiper/css/pagination";
 import PackageSlide from "@/components/modules/PackageSlide";
 
 function PackagesSlider() {
-
-
   return (
     <div className="relative w-full h-full">
       <Swiper

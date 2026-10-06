@@ -67,7 +67,7 @@ function Packages() {
       </div>
 
       <div className="slider-container w-1/2">
-      <PackagesSlider />
+        <PackagesSlider />
       </div>
     </div>
   );

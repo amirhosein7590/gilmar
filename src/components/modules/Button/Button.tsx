@@ -7,24 +7,7 @@ import { cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-export type TOnClick = (
-  event?: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-  ...rest: unknown[]
-) => void | unknown;
-
-type ButtonProp = {
-  className?: string;
-  variant?:
-    "default" | "destructive" | "outline" | "secondary" | "ghost" | "link";
-  size?: "default" | "sm" | "lg" | "xl" | "icon";
-  asChild?: boolean;
-  href?: string | null;
-  isActiveAware?: boolean;
-  disabled?: boolean;
-  type: "button" | "submit";
-  onClick?: TOnClick;
-  style?: React.CSSProperties;
-};
+import type { TOnClick, ButtonProp } from "./Button.type";
 
 const buttonVariants = cva(
   "inline-flex gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
@@ -79,13 +62,7 @@ const Button = React.memo(
       return (
         <Link
           type={type}
-          className={cn(
-            buttonVariants({ variant, size }),
-            disabled
-              ? "!text-[rgba(0,0,0,.26)] bg-[rgba(0,0,0,.12)] !cursor-not-allowed !border-[rgba(0,0,0,.12)] hover:!bg-[rgba(0,0,0,.12)]"
-              : "",
-            className ?? "",
-          )}
+          className={cn(buttonVariants({ variant, size }), className ?? "")}
           href={href}
           {...props}
         >
@@ -99,13 +76,7 @@ const Button = React.memo(
         data-slot="button"
         onClick={onClick}
         type={type}
-        className={cn(
-          buttonVariants({ variant, size }),
-          disabled
-            ? "!text-[rgba(0,0,0,.26)] bg-[rgba(0,0,0,.12)] !cursor-not-allowed !border-[rgba(0,0,0,.12)] hover:!bg-[rgba(0,0,0,.12)]"
-            : "",
-          className ?? "",
-        )}
+        className={cn(buttonVariants({ variant, size }), className ?? "")}
         {...props}
       >
         {children}

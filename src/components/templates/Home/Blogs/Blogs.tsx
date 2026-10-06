@@ -1,7 +1,7 @@
-import Background from "@/components/modules/Background"
-import BlogCard from "@/components/modules/BlogCard"
-import { blogCards } from "@/constants/ui/Blog/blogs"
-import Image from "next/image"
+import Background from "@/components/modules/Background";
+import BlogCard from "@/components/modules/BlogCard";
+import { blogCards } from "@/constants/ui/Blog/blogs";
+import Image from "next/image";
 
 function Blogs() {
   return (
@@ -19,27 +19,28 @@ function Blogs() {
           src="/images/icon-container-3.svg"
         />
         <p className="title text-[32px] font-bold font-abar-extra-bold text-center">
-مجله و مقالات گیلمار؛ روایت سفر، طبیعت و آرامش        
-</p>
+          مجله و مقالات گیلمار؛ روایت سفر، طبیعت و آرامش
+        </p>
         <span className="text-[14px] font-abar-semi-bold text-[#4C4C4D] text-center ">
-         در مجله گیلمار، خواندنی‌هایی درباره سفر، طبیعت، فرهنگ محلی و تجربه اقامتی دلنشین را دنبال کنید.
+          در مجله گیلمار، خواندنی‌هایی درباره سفر، طبیعت، فرهنگ محلی و تجربه
+          اقامتی دلنشین را دنبال کنید.
         </span>
       </div>
 
       {/* Blog Cards */}
-      
-            <div className="residence-carts-container flex justify-center items-center gap-x-6">
-              {blogCards.map(({ description, id, imageSrc, title }) => (
-                <BlogCard
-                  key={id}
-                  description={description}
-                  title={title}
-                  imageSrc={imageSrc}
-                />
-              ))}
-            </div>
+
+      <div className="residence-carts-container flex justify-center items-center gap-x-6">
+        {blogCards.map(({ description, id, imageSrc, title }) => (
+          <BlogCard
+            key={id}
+            description={description}
+            title={title}
+            imageSrc={imageSrc}
+          />
+        ))}
       </div>
-  )
+    </div>
+  );
 }
 
-export default Blogs
+export default Blogs;
